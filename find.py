@@ -12,6 +12,7 @@ if __name__ == "__main__":
     #print(ONE) #Print the first document in the collection
     collection = db["customers"]
     all = collection.find({"name": "John"},{"address": 0}) # address:0 means do not show address field
+    # print(all.count()) #print the count of documents found
     for i in all:  
         print(i)    #print(all) #Print the first document in the collection
     # collection = db["customers"]
